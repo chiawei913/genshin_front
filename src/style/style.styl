@@ -663,16 +663,11 @@ a,a:before,a>*
 
 .pc_character .character_flex
   position: relative
-  left: -110px
+  width: 100%
+  left: -220px
 
 .character_bk
   height: 870px
-
-.character_option
-  position: relative
-  width:10%
-  left: 70px
-  padding-top: 10px
 
 .character_attribute
   width: 40%
@@ -682,8 +677,8 @@ a,a:before,a>*
   left: 150px
 
 .character_bimg
-  width: 110%
-  height: 85vh
+  width: 100%
+  height: 100%
 
 .character_name
   position: relative
@@ -762,13 +757,20 @@ a,a:before,a>*
   margin-right: 8px
   margin-top: 4px
 
+.pc_character .character_select
+  display: flex
+  flex-direction: row
+  width: 1500px
+  justify-content: flex-end
+  position: relative
+  top: -890px
+  left: 100px
+
 .pc_character .character_sidebar
-  position: absolute
+  position: relative
   z-index: 0
-  top: 1820px
   right: 0px
   width: 200px
-  height: 20%
   box-sizing: border-box
 
 .pc_character .character_sidebar::before
@@ -803,13 +805,12 @@ a,a:before,a>*
 
 .character_small_out
   position: absolute
-  width: 50px
+  width: 160px
   height: 800px
   display: flex
   flex-wrap: wrap
   flex-direction: column
-  top: 1780px
-  right: 290px
+  right: 170px
 
 .character_small
   position: relative
@@ -827,15 +828,15 @@ a,a:before,a>*
 
 // home -- features
 .features-bg
-  width: 65%
+  width: 90%
   opacity: 0.85
 
 .features-bg-o
   position: relative
-  bottom: 10px
-  height: 510px
-  background: url('../assets/img/featrue_bg.png') no-repeat center
-  background-size: 75% 510px
+  margin: auto
+  width: 898px
+  height: 527px
+  background: url('../assets/img/featrue_bg.png') no-repeat center/cover
 
 .pc_features .carousel
   position: relative
@@ -849,14 +850,16 @@ a,a:before,a>*
   opacity: 0
 
 .pc_features .carousel-control-prev
-  background: url('../assets/icon/feature_left.png') no-repeat center/50px
-  height:50px
+  background: url('../assets/icon/feature_left.png') no-repeat center/65px
+  height:65px
   top:185px
+  left: -140px
 
 .pc_features .carousel-control-next
-  background: url('../assets/icon/feature_right.png') no-repeat center/50px
-  height:50px
+  background: url('../assets/icon/feature_right.png') no-repeat center/65px
+  height:65px
   top:185px
+  right: -140px
 
 .sakura1
   background: url('../assets/img/sakura1.png')
@@ -915,6 +918,10 @@ a,a:before,a>*
 .row
   margin: 0
 
+.footer .links
+  display: flex
+  justify-content: start
+
 .footer_link 
   padding: 0 10px
   margin: 5px 0
@@ -949,6 +956,16 @@ a,a:before,a>*
     overflow-x: hidden !important
     position: relative
     max-width: 100%
+
+  .footer .links
+    display: flex
+    justify-content: center
+  
+  .footer_img
+    display: flex
+    justify-content: flex-end
+    align-items: center
+    padding: 1.5rem
   
   .footer .row
     display: flex
@@ -956,11 +973,11 @@ a,a:before,a>*
 
   .logoimg img
     position: relative
-    width: 80%
+    width: 75%
     left: 20px
 
   .logoname img
-    width: 80%
+    width: 75%
   
   .links
     font-size: 13.5px
@@ -1304,20 +1321,19 @@ a,a:before,a>*
 
   .features-bg-o
     position: relative
-    bottom: 65px
-    width: 100%
-    height: 38vh
-    background: url('../assets/img/featrue_bg.png') no-repeat center
-    background-size: 75% 65%
+    margin: auto
+    width: 340px
+    height: 210px
+    background: url('../assets/img/featrue_bg.png') no-repeat center/cover
+    background-size: 100%
 
-  .features-bg-o .carousel-inner
+  .pc_features .carousel
     position: relative
-    top: 40px
+    top: 18px
+    filter: drop-shadow(2px 3.5px 3px rgba(0, 0, 0, 0.3))
 
   .features-bg
-    width: 65%
-    height: 100%
-    top: 20px
+    width: 90%
     opacity: 0.85
 
   .pc_features .carousel-control-prev
@@ -1464,8 +1480,9 @@ a,a:before,a>*
     line-height:9.5vw
   
   .topBar_m .barBox .menu_m .menuBox li .menus a:last-child
-      margin-bottom:5vw
-    .character_option
+    margin-bottom:5vw
+  
+  .character_option
     position: relative
     width: 25%
     top: -45px

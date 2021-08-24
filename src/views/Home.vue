@@ -105,29 +105,8 @@
     <h2>
       <img src="../assets/img/charater.png" class="title_img">
     </h2>
-    <div class="row flex-column ">
+    <div class="row">
       <div class="character_flex">
-        <!-- <b-carousel
-          id="carousel-3"
-          :interval="0"
-          controls
-        >
-          <b-carousel-slide v-for="(character, idx) in filtercharacter" :key="idx">
-            <template #img>
-              <img :src="character.attribute.image" class="character_attribute">
-              <img :src="character.big_image" class="character_bimg">
-            </template>
-             <p class="character_name">{{ character.name }}</p>
-             <div class="character_cv">
-               <p> CV: {{character.seiyuu }}</p>
-               <div class="character_voice" @click="playaudio(idx)"></div>
-               <div class="character_voice character_voice--active"  @click="stopaudio()" :style="seiyuu_audio"></div>
-             </div>
-             <div class="character_intro">
-               <div class="character_description">{{ character.description }}</div>
-             </div>
-          </b-carousel-slide>
-        </b-carousel> -->
         <div class="character_bk" v-for="(character, idx) in filtercharacter" :key="idx" :style="[character._id === changebimg ? {'display':'block'} : {'display':'none'}]">
           <div>
             <img :src="character.attribute.image" class="character_attribute">
@@ -144,14 +123,16 @@
           </div>
         </div>
       </div>
-      <ul class="character_sidebar">
-        <li class="charcter_city" v-for="country in countries" :key="country._id" @click="onChange(country._id)">
-          <p class="character_city_name">{{ country.name }}</p>
-        </li>
-      </ul>
-      <div class="character_small_out">
-        <div class="character_small_bg" v-for="(character, idx) in filtercharacter" :key="idx">
-          <img :src="character.small_image" class="character_small" role="button" @click="changeimg(character._id)">
+      <div class="character_select">
+        <ul class="character_sidebar">
+          <li class="charcter_city" v-for="country in countries" :key="country._id" @click="onChange(country._id)">
+            <p class="character_city_name">{{ country.name }}</p>
+          </li>
+        </ul>
+        <div class="character_small_out">
+          <div class="character_small_bg" v-for="(character, idx) in filtercharacter" :key="idx">
+            <img :src="character.small_image" class="character_small" role="button" @click="changeimg(character._id)">
+          </div>
         </div>
       </div>
     </div>
@@ -188,7 +169,7 @@
       </div>
     </div>
   </div>
-  <div class="container pt-5 pc_world" id="section03">
+  <div class="container pt-2 pc_world" id="section03">
     <h2>
       <img src="../assets/img/world.png" class="title_img">
       <img src="../assets/img/m_world.png" class="m_title_img">
