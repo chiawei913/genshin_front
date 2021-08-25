@@ -155,7 +155,12 @@
             <div class="character_voice" @click="playaudio(idx)"></div>
             <div class="character_voice character_voice--active"  @click="stopaudio()" :style="seiyuu_audio"></div>
           </div>
+          <div class="character_intro">
+            <div class="character_description">{{ character.description }}</div>
+          </div>
         </div>
+      </div>
+      <div class="character_select">
         <div class="character_option">
           <b-form-select v-model="selected" :options="findcountries" @change="onChange(selected)"></b-form-select>
         </div>
