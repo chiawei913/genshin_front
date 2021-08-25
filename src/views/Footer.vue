@@ -19,7 +19,7 @@
         <div class="copyright">
           Copyright © 2020 miHoYo All Rights Reserved
         </div>
-        <div class="footer_content d-flex justify-content-start text-left">
+        <div class="footer_content">
           <p>本遊戲為免費使用，遊戲內另提供購買虛擬貨幣、物品等付費服務。請注意遊戲時間，避免沉迷。本遊戲部份情節涉及性、暴力。</p>
         </div>
         <div class="footer_img2">

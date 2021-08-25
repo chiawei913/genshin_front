@@ -1,19 +1,21 @@
 ::-webkit-scrollbar-track
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3)
-  background-color: rgba(255,255,255,0.7);
+  background-color: rgba(255,255,255,0.7)
 
 ::-webkit-scrollbar
-  width: 6px;
-  background-color: black;
+  width: 6px
+  background-color: black
 
 ::-webkit-scrollbar-thumb 
-  background-color: rgba(68,92,135,0.6);
+  background-color: rgba(68,92,135,0.6)
+  
 #app
   text-align center
   color #2c3e50
 
 .back_body
-  background: rgba(203, 203, 210, 0.15);
+  background: rgba(203, 203, 210, 0.15)
+
 // 後台
 .wrapper
   position: relative
@@ -395,10 +397,6 @@ a,a:before,a>*
   width: 100%
   height: 338px
 
-#new 
-  width: 530px
-  overflow: hidden
-
 #new .tabNav
   position: relative
   display: flex
@@ -520,14 +518,14 @@ a,a:before,a>*
 
 .pc_world span
   color: #fff
-  text-shadow: 3px 2px 1px #947f6a;
+  text-shadow: 3px 2px 1px #947f6a
   font-size: 20px
 
 .pc_world .world-content
   display: flex
   position: absolute
   color: #fff
-  text-shadow: 3px 2px 1px #947f6a;
+  text-shadow: 3px 2px 1px #947f6a
   line-height: 35px
   width: 100%
   height: 100%
@@ -840,7 +838,7 @@ a,a:before,a>*
 
 .pc_features .carousel
   position: relative
-  top: 45px
+  top: 38px
   filter: drop-shadow(2px 3.5px 3px rgba(0, 0, 0, 0.3))
 
 .pc_features .carousel-control-prev-icon
@@ -947,13 +945,16 @@ a,a:before,a>*
 
 .footer_content
   width:70%
-  margin-top: 10px
+  margin-top: 10px 
+  display: flex
+  justify-content: start
+  text-align: left
 
 .footer_img2
   display: flex
   justify-content: start
 
-@media (max-width:768px)
+@media (max-width:1024px)
   body,html
     overflow-x: hidden !important
     position: relative
@@ -973,11 +974,12 @@ a,a:before,a>*
   
   .footer_img
     display: flex
-    justify-content: flex-end
+    justify-content: center
     align-items: center
     position: relative
-    top: 16px
-    // padding-top: 1.8rem
+    top: 20px
+    left: 10px
+    // padding-top: 2.5rem
   
   .footer .row
     display: flex
@@ -985,23 +987,28 @@ a,a:before,a>*
 
   .logoimg img
     position: relative
-    width: 75%
-    left: 20px
+    width: 100%
+    height: 100%
+    left: 0px
 
   .logoname img
-    width: 75%
-  
+    width: 100%
+    height: 100%
+
   .links
-    font-size: 13.5px
+    font-size: 16px
   
   .copyright
-    font-size: 13.5px
+    font-size: 16px
     display: flex
     justify-content: center
   
   .footer_content
     width: 100%
-    font-size: 13.5px
+    font-size: 16px
+    display: flex
+    justify-content: center
+    text-align: center
 
   .footer_img2
     display: flex
@@ -1157,6 +1164,555 @@ a,a:before,a>*
     display: flex
     width: 100%
     height: 100%
+    top: -50px
+    flex-direction: column
+  
+  .m-row
+    display: block
+    position: relative
+    margin-right: -15px
+    margin-left: -15px
+    top: -50px
+
+  .new-carousel
+    height: auto
+    padding-bottom: 20px 
+
+  .new-carousel .imgsize
+    width: 100%
+    height: auto
+
+  .news-all
+    width: 100%
+    height: auto
+
+  #new .tabNav
+    width: 100%
+
+  #new .tabNav .tab_nav a
+    padding: 10px 10px
+    font-size: 20px
+    color:#575f6d
+    line-height: 18px
+    text-align: center
+    border-radius: 8px 8px 0 0  
+  
+  #new .tabs .list a>*
+    line-height: 25px
+
+  #new .tabs .list a span
+    left: 0;
+    width: 70px;
+    color: #fff;
+    text-align: center;
+    background: #627eb2;
+    border-radius: 4px;
+    position: absolute;
+    top: 9px;
+  
+  .newstitle
+    padding-top: 9px
+    padding-bottom: 10px
+    padding-left: 85px
+    width: 75%
+    color:#575f6d
+    overflow: hidden
+    text-overflow: ellipsis
+    white-space: nowrap
+    text-align: left
+    font-size: 19px
+  
+  .newsdate
+    position: absolute
+    top: 0
+    margin: 9px 0 8px
+    right: 0
+    font-size: 19px
+    color:#575f6d 
+  
+  #new .tabNav .btn_more
+    position: absolute
+    top: -5px
+    right: 0
+    bottom: 0
+    margin: auto
+    width: 75px
+    height: 35px
+    font-size: 20px
+    color:#fff
+    line-height: 30px
+    text-align: center
+    background:#575f6d
+    border-radius: 4px
+
+  .pc_world
+    position: relative
+    width: 100%
+    top: -10px
+
+  .world-bg
+    width: 600px
+    height: 350px
+
+  .worldname
+    position: relative
+    background: url('../assets/img/world_title.png') no-repeat center
+    background-size: contain
+    height: 30px
+    top: 12px
+
+  .pc_world span
+    color: #fff
+    text-shadow: 3px 2px 1px #947f6a
+    font-size: 18px
+
+  .pc_world .world-content
+    display: flex
+    position: absolute
+    color: #fff
+    text-shadow: 3px 2px 1px #947f6a
+    line-height: 35px
+    width: 100%
+    height: 100%
+    font-size: 20px
+    justify-content: center
+    top: 100px
+
+  .pc_world .carousel-control-prev-icon
+    background: url('../assets/icon/arrow_left.png') no-repeat center/40px
+    opacity: 1
+
+  .pc_world .carousel-control-prev
+    bottom: 423px
+    left: 30px
+
+  .pc_world .carousel-control-next-icon
+    background: url('../assets/icon/arrow_right.png') no-repeat center/40px
+    opacity: 1
+
+  .pc_world .carousel-control-next
+    bottom: 423px
+    right: 30px
+  
+  .pc_world .carousel-inner
+    height: 480px
+    
+  .pc_world .city_detail
+    position: absolute
+    display: flex
+    width: 100%
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    bottom: -100px
+    border: none
+    background: transparent
+    cursor: pointer
+
+  .pc_world .city_detail::before
+    z-index: 2
+    display: block
+    content: ''
+    width: 40px
+    height: 40px
+    transform-origin: center
+    background:url('../assets/icon/world_open.png') center no-repeat
+    background-size: 100% auto
+  
+  .pc_world .city_detail::after
+    content: ''
+    position: absolute
+    top: 22px
+    left: 50%
+    width: 80px
+    height: 80px
+    background:url('../assets/icon/world_open_out.png') center no-repeat
+    background-size: cover
+    transform-origin: center
+    animation: wave 1s linear infinite
+  
+  .pc_world .city_detail p
+    color: #947f6a
+    font-size: 10px
+    text-align: center
+
+  .pc_features
+    position: relative
+    width: 100%
+    top: -20px
+
+  .features-bg-o
+    position: relative
+    margin: auto
+    width: 500px
+    height: 290px
+    background: url('../assets/img/featrue_bg.png') no-repeat center/cover
+    background-size: 100%
+
+  .pc_features .carousel
+    position: relative
+    top: 18px
+    filter: drop-shadow(2px 3.5px 3px rgba(0, 0, 0, 0.3))
+
+  .features-bg
+    width: 90%
+    opacity: 0.85
+
+  .pc_features .carousel-control-prev
+    background: url('../assets/icon/feature_left.png') no-repeat center/40px
+    height:50px
+    top:90px
+
+  .pc_features .carousel-control-next
+    background: url('../assets/icon/feature_right.png') no-repeat center/40px
+    height:50px
+    top:90px
+
+  .pc_character
+    display: none
+
+  .m_character
+    display: block
+    position: relative
+    width: 100%
+    top: -125px
+  
+  .character_bk
+    height: 625px
+  
+  .character_flex
+    position: relative
+    top: -80px 
+
+  .character_pimg
+    position: relative
+    width: 100%
+    top: -30px
+    left: 0px
+    opacity: 0.95
+
+  .character_name
+    position: relative
+    display: flex
+    width: 100%
+    height: 54px
+    top: -670px
+    left: 10px
+    font-size: 100px
+    color: #24333c
+    line-height: 0px
+  
+  .character_cv
+    position: relative
+    display: flex
+    width: 270px
+    height: 60px
+    top: -670px
+    left: 10px
+    font-size: 30px
+    color: #24333c
+    line-height: 60px
+    padding-left: 10px
+    box-sizing: border-box
+    background: #cca574 url('../assets/icon/m_char.jpg') no-repeat
+    background-position: left top
+    background-size: 40px
+    margin-top: 0px
+    box-shadow: 2px 3px 6px 0 rgb(12 12 12 / 20%)
+  
+  .character_voice
+    position: absolute
+    top: -4px
+    right: -5px
+    width: 65px
+    height: 68px
+    background-image: url('../assets/icon/char2.png')
+    background-repeat: no-repeat
+    background-position: center
+    background-size: 70px
+    cursor: pointer
+  
+  .character_voice--active
+    cursor: pointer
+    background-image: url('../assets/icon/char2.gif')  
+  
+  .character_intro
+    position: relative
+    display: flex
+    width: 65%
+    top: -655px
+    left: 10px
+    max-height: 125px
+    text-align: justify
+    overflow-y: auto
+    padding: 10px 0 10px 15px
+    box-sizing: border-box
+    background: rgba(1,1,1,0.5)
+    font-size: 16px
+    color: #fff
+    margin-top: 17px
+    line-height: 26px
+
+  .character_attribute
+    width: 80%
+    position: absolute
+    left: 0px
+    z-index: -1
+    opacity: 0.5
+
+  .character_select
+    position: relative
+    top: 120px
+
+  .character_option
+    position: relative
+    width: 25%
+    left:7px
+    z-index: 1
+  
+  .m_character .character_small_all
+    width: 100%
+    height: 300px
+    margin: auto
+    top: 30px
+    position: relative
+
+  .m_character .character_small_out
+    width: 650px
+    height: auto
+    position: absolute
+    // top: 0
+    right: 0
+    // bottom: 0
+    // left: 0
+    // margin: auto
+    display: flex
+    flex-direction: row
+
+  .m_character .character_small
+    position: relative
+    width:70px
+    height:70px
+    top:15px
+    border-radius: 10px
+  
+  .m_character .character_small_bg
+    background: url('../assets/img/char_sbg_hover.png') no-repeat center/100px
+    width: 100px
+    height: 100px
+    margin-left: -21px
+    margin-bottom: -19px
+
+  @media (min-width: 992px)
+    .container, .container-lg, .container-md, .container-sm
+      max-width: 720px
+
+@media (max-width:767px)
+  body,html
+    overflow-x: hidden !important
+    position: relative
+    max-width: 100%
+  
+  .footer
+    padding: 0
+    margin: 0
+    width: 100%
+    height: 100%
+    background: #111
+    color: #fff
+
+  .footer .links
+    display: flex
+    justify-content: center
+  
+  .footer_img
+    display: flex
+    justify-content: center
+    align-items: center
+    position: relative
+  
+  .footer .row
+    display: flex
+    flex-direction: column
+
+  .logoimg img
+    position: relative
+    width: 75%
+    height: 75%
+    left: 10px
+
+  .logoname img
+    position: relative
+    width: 75%
+    height: 75%
+    left: -10px
+  
+  .links
+    font-size: 13.5px
+  
+  .copyright
+    font-size: 13.5px
+    display: flex
+    justify-content: center
+  
+  .footer_content
+    width: 100%
+    font-size: 13.5px
+
+  .footer_img2
+    display: flex
+    justify-content: center
+
+  .sakura, .sakura1
+    display: none
+  
+  .home
+    background: url('../assets/img/m_home.jpg') no-repeat center/cover
+    height: 100%
+    transform: scale(1)
+
+  // navber
+  .topBar_m .barBox .bar_left .headName,.topBar_m .barBox .menu_m .menuBox li a span:first-child
+    font-family: "Noto Sans TC",Microsoft JhengHei
+  
+  .topBar
+    display: none
+
+  .topBar_m
+    position: fixed
+    z-index: 100
+    top: 0
+    display: block
+    width: 100vw
+   
+  .topBar_m:before
+    content: ""
+    position: absolute
+    top:0
+    display: block
+    width: 100%
+    height: 55px
+    background:rgba(255,255,255,0.9)
+    box-shadow:0 4px 4px rgba(0,0,0,0.1),0 1px 2px rgba(0,0,0,0.2)
+  
+  .topBar_m .barBox
+    position: relative
+    display: flex;
+    justify-content: space-between
+    align-items: flex-start
+    padding: 0 0.5vw 0 1.5vw
+    height: 55px
+
+  .topBar_m .barBox .bar_left
+    display:flex
+    align-items:flex-start
+
+  .topBar_m .barBox .bar_right
+    display: flex
+    align-items: center
+    height:60px
+    padding-right: 10px
+
+  .topBar_m .barBox .bar_right .btn_menu
+    position: relative
+    z-index:21
+    width:46px
+    height:46px
+
+  .topBar_m .barBox .menu_m
+    position:fixed
+    top:0
+    right:-100vw
+    z-index:20
+    padding:12vw 0
+    width:100vw
+    height:100%
+    overflow:auto
+    background:#4c6491
+    transition:0.4s cubic-bezier(0.4,0,0.2,1)
+  
+  .topBar_m .barBox .menu_m.open
+    right:0
+  
+  .topBar_m .barBox .menu_m .menuBox
+    display: flex
+    flex-wrap: wrap
+    margin: auto
+    width: 35vw
+  
+  .topBar_m .barBox .menu_m .menuBox li
+    margin:auto
+    width:50vw
+    border-bottom:1px #62779e solid
+  
+  .topBar_m .barBox .menu_m .menuBox li a
+    padding:2vw 0
+    width:100%
+    text-align: center
+    text-decoration: none
+  
+  .topBar_m .barBox .menu_m .menuBox li a span:first-child
+    margin-bottom: 3px
+    font-size: 3.5vw
+    color:#fff
+    line-height: 3.5vw
+  
+  .topBar_m .barBox .menu_m .menuBox li a span:last-child
+    font-size: 2vw
+    color:#849cc8
+    line-height: 2vw
+  
+  .topBar_m .barBox .menu_m .menuBox li .menus a
+    padding: 0
+    margin: 0 auto 1vw
+    width: 33vw
+    height: 6vw
+    font-size: 3vw
+    color:#a5fcff
+    line-height: 6.5vw
+    text-align: center
+    background:#5e7bb1
+    border-radius: 5px
+
+  .topBar_m .icon
+    display: flex
+    justify-content: center
+    align-self: center
+
+  .poster
+    display: none
+
+  .m_poster
+    display: block
+
+  .m_poster #background-video
+    position: relative
+    right: 0
+    bottom: 0
+    width: 100vw
+    height: 100vh
+
+  h2
+    left: 50%
+    right: auto
+    text-align: center
+  
+  .title_img
+    display: none
+  
+  img
+    vertical-align: middle
+    border-style: none
+  
+  .m_title_img
+    display: block
+    width: 100%
+  
+  .pc_news
+    position: relative
+    display: flex
+    width: 100%
+    height: 100%
     top: -40px
     flex-direction: column
   
@@ -1164,7 +1720,8 @@ a,a:before,a>*
     display: block
     position: relative
     margin-right: -15px
-    margin-left: -15px 
+    margin-left: -15px
+    top: 0px
 
   .new-carousel
     height: auto
@@ -1193,13 +1750,13 @@ a,a:before,a>*
     line-height: 25px
 
   #new .tabs .list a span
-    left: 0;
-    width: 50px;
-    color: #fff;
-    text-align: center;
-    background: #627eb2;
-    border-radius: 4px;
-    position: absolute;
+    left: 0
+    width: 50px
+    color: #fff
+    text-align: center
+    background: #627eb2
+    border-radius: 4px
+    position: absolute
     top: 9px;
   
   .newstitle
@@ -1240,7 +1797,7 @@ a,a:before,a>*
   .pc_world
     position: relative
     width: 100%
-    top: 105px
+    top: -50px
 
   .world-bg
     width: 400px
@@ -1255,14 +1812,14 @@ a,a:before,a>*
 
   .pc_world span
     color: #fff
-    text-shadow: 3px 2px 1px #947f6a;
+    text-shadow: 3px 2px 1px #947f6a
     font-size: 18px
 
   .pc_world .world-content
     display: flex
     position: absolute
     color: #fff
-    text-shadow: 3px 2px 1px #947f6a;
+    text-shadow: 3px 2px 1px #947f6a
     line-height: 35px
     width: 100%
     height: 100%
@@ -1331,7 +1888,7 @@ a,a:before,a>*
   .pc_features
     position: relative
     width: 100%
-    // top: 30px
+    top: -100px
 
   .features-bg-o
     position: relative
@@ -1369,6 +1926,13 @@ a,a:before,a>*
     width: 100%
     top: -55px
   
+  .character_flex
+    position: relative
+    top: 0px 
+
+  .m_character .character_intro
+    display: none
+
   .character_bk
     height: 625px
   
@@ -1431,10 +1995,13 @@ a,a:before,a>*
     z-index: -1
     opacity: 0.5
 
+  .character_select
+    position: relative
+    top: -50px
+
   .character_option
     position: relative
     width: 25%
-    top: 150px
     left:7px
     z-index: 1
   
@@ -1442,7 +2009,7 @@ a,a:before,a>*
     width: 100%
     height: 300px
     margin: auto
-    top: 180px
+    top: 20px
     position: relative
 
   .m_character .character_small_out
@@ -1470,83 +2037,3 @@ a,a:before,a>*
     height: 70px
     margin-left: 0px
     margin-right: 0px
-
-@media (max-width:576px)
-  .topBar_m .barBox .menu_m .menuBox
-    width:50vw
-  
-  .topBar_m .barBox .menu_m .menuBox li a
-    padding:4vw 0
-
-  .topBar_m .barBox .menu_m .menuBox li a span:first-child
-    font-size:6vw
-    line-height:6vw
-  
-  .topBar_m .barBox .menu_m .menuBox li a span:last-child
-    font-size:3.5vw
-    line-height:3.5vw
-  
-  .topBar_m .barBox .menu_m .menuBox li .menus a
-    margin:0 auto 2.2vw
-    width:46vw
-    height:9.5vw
-    font-size:4.5vw
-    line-height:9.5vw
-  
-  .topBar_m .barBox .menu_m .menuBox li .menus a:last-child
-    margin-bottom:5vw
-  
-  .character_option
-    position: relative
-    width: 25%
-    top: -45px
-    left:7px
-    z-index: 1
-  
-  .home
-    background: url('../assets/img/m_home.jpg') no-repeat center/cover
-    height: 100%
-    transform: scale(1)
-
-  .m_character .character_small_all
-    width: 100%
-    height: 300px
-    margin: auto
-    top: -20px
-    position: relative
-
-  .m_character .character_small_out
-    width:350px
-    height: auto
-    position: absolute
-    top: 0
-    right: 0
-    bottom: 0
-    left: 0
-    margin: auto
-    display: flex
-    flex-direction: row
-
-  .m_character .character_small
-    position: relative
-    width:50px
-    height:50px
-    top:11px
-    border-radius: 10px
-  
-  .m_character .character_small_bg
-    background: url('../assets/img/char_sbg_hover.png') no-repeat center/100px
-    width: 70px
-    height: 70px
-    margin-left: 0px
-    margin-right: 0px
-
-  .pc_world
-    position: relative
-    width: 100%
-    top: -80px
-   
-  .pc_features
-    position: relative
-    width: 100%
-    top: -160px
