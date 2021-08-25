@@ -35,11 +35,11 @@
           </ul>
         </div>
         <div class="bar_right">
-          <img src="../assets/icon/facebook.png" width="12%" height="12%">
-          <img src="../assets/icon/twitter.png" width="12%" height="12%">
-          <img src="../assets/icon/youtube.png" width="12%" height="12%">
-          <img src="../assets/icon/instagram.png" width="12%" height="12%">
-          <img src="../assets/icon/discord.png" width="12%" height="12%">
+          <img src="../assets/icon/facebook.png" class="topbar_icon_size">
+          <img src="../assets/icon/twitter.png" class="topbar_icon_size">
+          <img src="../assets/icon/youtube.png" class="topbar_icon_size">
+          <img src="../assets/icon/instagram.png" class="topbar_icon_size">
+          <img src="../assets/icon/discord.png" class="topbar_icon_size">
         </div>
       </div>
     </div>

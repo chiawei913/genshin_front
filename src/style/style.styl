@@ -294,7 +294,14 @@ a,a:before,a>*
   
 .topBar .bar_right
   position: relative
-  top: 10px
+  top:15px
+  // bottom: 148px
+  // left: 1670px
+  width: 200px
+  height: 100%
+  display: flex
+  justify-content: flex-end
+  z-index: 0 
 
 .topBar:before
   content: ""
@@ -310,23 +317,31 @@ a,a:before,a>*
   position: relative
   display: flex
   justify-content: space-between
-  align-items: flex-start
+  // justify-content: flex-start
+  // align-items: flex-start
   padding: 0 10px 0 15px
 
+.topbar_icon_size
+  width: 50px
+  height: 50px
+
 .topBar .bar_left
-  display:flex
+  display: flex
   align-items: flex-start
+  // width: 1500px
 
 .topBar .bar_left .logo
   margin:-7px 8px 0 -8px
 
 .logo img
-  width: 263px
-  height: 169px
+  width: 258px
+  height: 165px
   filter: drop-shadow(6px 6px 3px rgba(15, 175, 242, 0.7))
 
 .topBar .barBox .bar_left .menu
   display: flex
+  position: relative
+  left: -75px
   margin-top: 5px
 
 .topBar .barBox .bar_left .menu li
@@ -851,13 +866,13 @@ a,a:before,a>*
   background: url('../assets/icon/feature_left.png') no-repeat center/65px
   height:65px
   top:185px
-  left: -140px
+  left: -110px
 
 .pc_features .carousel-control-next
   background: url('../assets/icon/feature_right.png') no-repeat center/65px
   height:65px
   top:185px
-  right: -140px
+  right: -110px
 
 .sakura1
   background: url('../assets/img/sakura1.png')
