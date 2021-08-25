@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "css/admin.2a3a06c5.css"
   },
   {
-    "revision": "147c1a0bd64b22df7e52",
-    "url": "css/app.3b7a2372.css"
+    "revision": "25db57ece60ba485dd83",
+    "url": "css/app.8f87528d.css"
   },
   {
     "revision": "e2ee13e145227fbcda0a",
@@ -168,7 +168,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "img/world_title.5316b4bd.png"
   },
   {
-    "revision": "9d8b7865b31f5ad88fc617ffbdc6aadf",
+    "revision": "3e9742ebd3134d1cd77f06bfd93c56e3",
     "url": "index.html"
   },
   {
@@ -184,8 +184,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "js/admin.7e13a3e8.js"
   },
   {
-    "revision": "147c1a0bd64b22df7e52",
-    "url": "js/app.b81a6c1a.js"
+    "revision": "25db57ece60ba485dd83",
+    "url": "js/app.d188920a.js"
   },
   {
     "revision": "e2ee13e145227fbcda0a",
