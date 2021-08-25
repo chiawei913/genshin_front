@@ -16,7 +16,7 @@
           <a herf="" class="footer_link">公司簡介</a>
           <a herf="" class="footer_link">聯絡我們</a>
         </div>
-        <div class="copyright d-flex justify-content-start">
+        <div class="copyright">
           Copyright © 2020 miHoYo All Rights Reserved
         </div>
         <div class="footer_content d-flex justify-content-start text-left">

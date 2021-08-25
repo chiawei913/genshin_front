@@ -84,11 +84,11 @@
             </li>
           </div>
           <div class="icon pt-5">
-            <img src="../assets/icon/facebook.png" width="10%">
-            <img src="../assets/icon/twitter.png" width="10%">
-            <img src="../assets/icon/youtube.png" width="10%">
-            <img src="../assets/icon/instagram.png" width="10%">
-            <img src="../assets/icon/discord.png" width="10%">
+            <img src="../assets/icon/facebook.png" width="8%" height="8%">
+            <img src="../assets/icon/twitter.png" width="8%" height="8%">
+            <img src="../assets/icon/youtube.png" width="8%" height="8%">
+            <img src="../assets/icon/instagram.png" width="8%" height="8%">
+            <img src="../assets/icon/discord.png" width="8%" height="8%">
           </div>
         </div>
       </div>
